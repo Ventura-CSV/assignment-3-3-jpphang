@@ -1,4 +1,4 @@
-def main():
+def main(email):
     email = input('Enter your email: ')
     """
     ########################################
@@ -14,12 +14,20 @@ def main():
         return False
     
     #condition3:It must include the letter '@' and must include at least one '.' after ‘@’
+    at_index = email. find('@')
+    if at_index == -1:
+        return False
+    
+    dot_index = email. find('.', at_index)
+    if dot_index == -1:
+        return False
+    
+        return True
+    
+    
+    result = main(email)
 
-    
-    
-    
-    result = True
-
+    print(result)
     ########################################
     # Do not delete the return statement
     ########################################
