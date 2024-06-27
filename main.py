@@ -6,7 +6,13 @@ def main():
     ########################################
     """
     #condition1:must start with the alphabet character ( ‘a~z’, ‘A~z’) 
+    if not email [0]. isalpha():
+        return False
+    
     #condition2:email string length is greater than 5 and less than 30
+    if len() <= 5 and len() >=30:
+        return False
+    
     #condition3:It must include the letter '@' and must include at least one '.' after ‘@’
 
     
